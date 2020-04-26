@@ -28,10 +28,12 @@ public class BaseClass {
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
 		System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 	      driver=new ChromeDriver();
+	      System.out.println("chrome browser-----");
 		}
 		else if(brw.contains("firfox")) {
 			System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");
 		      driver=new FirefoxDriver();
+		      System.out.println("-----firfox browser-----");
 		}
 		
 		driver.get("http://demo.guru99.com/Agile_Project/Agi_V1/index.php");
