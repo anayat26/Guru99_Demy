@@ -2,6 +2,7 @@ package utitlities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -24,6 +25,7 @@ public class BaseClass {
 	public void openBrw(String brw) {
 		
 		if(brw.contains("chrome")) {
+		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
 		System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 	      driver=new ChromeDriver();
 		}

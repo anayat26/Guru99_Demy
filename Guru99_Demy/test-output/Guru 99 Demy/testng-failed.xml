@@ -4,13 +4,6 @@
   <test thread-count="5" name="chrome(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="test_Script.FileUpload_Test">
-        <methods>
-          <include name="filUpload"/>
-          <include name="openBrw"/>
-          <include name="closeBrw"/>
-        </methods>
-      </class> <!-- test_Script.FileUpload_Test -->
       <class name="test_Script.Loging_Test">
         <methods>
           <include name="verifyLoginValidCred"/>

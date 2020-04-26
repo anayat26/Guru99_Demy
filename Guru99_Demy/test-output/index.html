@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Guru_99_Demy">
-              <span class="suite-name border-passed">Guru 99 Demy</span>
+              <span class="suite-name border-skipped">Guru 99 Demy</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Guru_99_Demy">
-                    <span>C:\Users\jackson\Desktop for java practice\Guru99_Demy\smoke.xml</span>
+                    <span>C:\Users\jackson\git\Guru99_Demy\Guru99_Demy\regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Guru_99_Demy" class="hide-methods passed suite-Guru_99_Demy"> (hide)</a> <!-- hide-methods passed suite-Guru_99_Demy -->
-                      <a href="#" panel-name="suite-Guru_99_Demy" class="show-methods passed suite-Guru_99_Demy"> (show)</a> <!-- show-methods passed suite-Guru_99_Demy -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Guru_99_Demy" class="hide-methods skipped suite-Guru_99_Demy"> (hide)</a> <!-- hide-methods skipped suite-Guru_99_Demy -->
+                      <a href="#" panel-name="suite-Guru_99_Demy" class="show-methods skipped suite-Guru_99_Demy"> (show)</a> <!-- show-methods skipped suite-Guru_99_Demy -->
                     </span>
-                    <div class="method-list-content passed suite-Guru_99_Demy">
+                    <div class="method-list-content skipped suite-Guru_99_Demy">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Demy" title="test_Script.Loging_Test" hash-for-method="verifyLoginValidCred">verifyLoginValidCred</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Guru_99_Demy -->
+                    </div> <!-- method-list-content skipped suite-Guru_99_Demy -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Guru_99_Demy" class="panel Guru_99_Demy">
-          <div class="suite-Guru_99_Demy-class-passed">
+          <div class="suite-Guru_99_Demy-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">test_Script.Loging_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,14 +128,38 @@
                   <a name="verifyLoginValidCred">
                   </a> <!-- verifyLoginValidCred -->
                   <span class="method-name">verifyLoginValidCred</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-N29E5RL&apos;, ip: &apos;10.0.0.80&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\jackson\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: eb6596edebd73dbd004e4d5ba7e83bab
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at utitlities.BaseClass.openBrw(BaseClass.java:38)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Guru_99_Demy-class-passed -->
+          </div> <!-- suite-Guru_99_Demy-class-skipped -->
         </div> <!-- panel Guru_99_Demy -->
         <div panel-name="test-xml-Guru_99_Demy" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\jackson\Desktop for java practice\Guru99_Demy\smoke.xml</span>
+            <span class="header-content">C:\Users\jackson\git\Guru99_Demy\Guru99_Demy\regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,12 +221,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginValidCred')
 data.setCell(0, 2, 'test_Script.Loging_Test')
-data.setCell(0, 3, 3182);
+data.setCell(0, 3, 0);
 window.suiteTableData['Guru_99_Demy']= { tableData: data, tableDiv: 'times-div-Guru_99_Demy'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Guru_99_Demy">
               </div> <!-- times-div-Guru_99_Demy -->
             </div> <!-- times-div -->
@@ -237,16 +261,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test_Script.Loging_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">openBrw(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginValidCred</span>
-                <span class="method-start">15648 ms</span>
+                <span class="method-start">7431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrw</span>
-                <span class="method-start">18837 ms</span>
+                <span class="method-start">7445 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

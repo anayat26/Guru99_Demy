@@ -11,12 +11,4 @@
 			<!-- <class name="test_Script.FileUpload_Test" /> -->
 		</classes>
 	</test>
-	<test thread-count="5" name="firfox">
-		<parameter name="browser" value="firfox" />
-
-		<classes>
-			<class name="test_Script.Loging_Test" />
-			<!-- <class name="test_Script.FileUpload_Test" /> -->
-		</classes>
-	</test>
 </suite> <!-- Suite -->
