@@ -12,7 +12,7 @@
 
  <profiles>
   <profile>
-  <id>testng</id>
+  <id>regression</id>
   <build>
 		<plugins>
 			<plugin>
@@ -21,7 +21,7 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

@@ -8,7 +8,7 @@
 
 		<classes>
 			<class name="test_Script.Loging_Test" />
-			<!-- <class name="test_Script.FileUpload_Test" /> -->
+		    <class name="test_Script.FileUpload_Test" /> 
 		</classes>
 	</test>
 </suite> <!-- Suite -->
